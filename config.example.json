@@ -1,0 +1,29 @@
+{
+  "_comment": "Copy this to config.json and fill in real values. config.json is gitignored.",
+
+  "api_id": 123456,
+  "api_hash": "PUT_YOUR_API_HASH_HERE",
+  "session_name": "tgclaude",
+
+  "operator_chat_id": "me",
+  "_operator_note": "'me' = your own Saved Messages. The daemon DMs you there on errors / spend-cap / login alerts.",
+
+  "clients_root": "~/clients",
+  "_clients_root_note": "Per-client working dirs live here. Keep it SPACE-FREE and OUTSIDE this app folder (isolation rule).",
+
+  "claude_bin": "claude",
+  "model": null,
+  "_model_note": "null = let Claude Code pick the default model. Set e.g. 'sonnet' to force a cheaper model per turn.",
+
+  "max_concurrent": 2,
+  "max_turns": 40,
+  "spend_cap_usd": 20.0,
+
+  "allowed_tools": "Read,Write,Edit,Glob,Grep,TodoWrite",
+  "disallowed_tools": "Bash,WebSearch,WebFetch,Task,KillShell",
+
+  "allowlist": [
+    { "id": null, "username": "your_test_username", "note": "your own test account — fill this in first" }
+  ],
+  "_allowlist_note": "Only these people are served. Match by numeric 'id' (preferred, stable) or '@username'. Edit this file live; it is re-read on every incoming message — no restart needed. To remove a client, delete their entry."
+}

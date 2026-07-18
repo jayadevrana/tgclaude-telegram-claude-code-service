@@ -1,0 +1,25 @@
+# Secrets and runtime state — NEVER commit these.
+config.json
+*.session
+*.session-journal
+state.db
+state.db-wal
+state.db-shm
+logs/
+.venv/
+__pycache__/
+*.pyc
+
+# Standard ignores
+node_modules/
+.env
+.env.*
+!.env.example
+dist/
+build/
+.next/
+out/
+*.log
+.DS_Store
+*.sqlite
+*.db

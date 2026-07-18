@@ -1,0 +1,3 @@
+# Phase 1 MVP — the daemon only needs Telethon for Telegram I/O.
+# Everything else (sqlite3, asyncio, json) is stdlib. Works on Python 3.9+.
+telethon>=1.36,<2
